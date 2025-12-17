@@ -27,17 +27,24 @@
 <h2 align="center">🎯 Overview</h2>
 
 <p align="center">
-  Built for the <b>Gemscap Quantitative Developer</b> assignment, this production-grade system demonstrates:
+  <b>Assignment:</b> Build a real-time quantitative trading analytics system demonstrating production-grade infrastructure for statistical arbitrage on cryptocurrency pairs.
 </p>
 
-- ✅ **Real-time data ingestion** from Binance WebSocket (sub-second latency)
-- ✅ **Novel Signal Quality Scoring** - composite 0-100 metric synthesizing 5 factors  
-- ✅ **Live PnL simulation** with institutional metrics (Sharpe, drawdown, profit factor)
-- ✅ **Institutional risk management** (VaR, CVaR, portfolio health scoring)
-- ✅ **Production architecture** (Docker, TimescaleDB, Redis, async Python)
+<p align="center">
+  <b>My Solution:</b> A complete end-to-end platform that ingests live market data, computes institutional-grade analytics, and visualizes trading opportunities through an intelligent signal quality framework.
+</p>
+
+**Core Capabilities Delivered:**
+
+- ✅ **Real-Time Data Pipeline** - Binance WebSocket ingestion with sub-second latency and three-tier storage architecture
+- ✅ **Statistical Arbitrage Analytics** - Hedge ratio computation, z-score analysis, and cointegration testing (ADF)
+- ✅ **Signal Quality Innovation** - Novel composite scoring system (0-100) that weighs z-score strength, correlation quality, spread stability, cointegration validity, and historical performance
+- ✅ **Live Trading Simulation** - Position tracking with institutional metrics including Sharpe ratio, profit factor, and maximum drawdown
+- ✅ **Risk Management Framework** - Value at Risk (VaR), Conditional VaR (CVaR), Kelly Criterion position sizing, and portfolio health scoring
+- ✅ **Production Architecture** - Containerized deployment with TimescaleDB for time-series optimization, Redis for caching, and async Python for concurrent operations
 
 <p align="center">
-  <b>The Journey:</b> Through rigorous testing and parameter optimization, I discovered the critical distinction between <b>correlation and cointegration</b> - understanding that high correlation alone doesn't guarantee profitable mean-reversion trading.
+  <b>Key Technical Achievement:</b> Implemented a multi-factor validation system that prevents trading on statistically invalid signals—distinguishing between mere correlation (assets moving together) and true cointegration (mean-reverting spread relationship). This distinction is critical for pairs trading profitability.
 </p>
 
 ---
@@ -177,6 +184,9 @@
 - Correlation: 0.983 (very high)
 - ADF P-Value: 0.7908 (non-stationary ❌)
 - Stationary: No (critical issue!)
+
+**💾 Data Export:**
+Click Download Price Data (CSV)" button in the Summary tab to export historical prices with timezone-aware timestamps for offline analysis and backtesting.
 
 ---
 
