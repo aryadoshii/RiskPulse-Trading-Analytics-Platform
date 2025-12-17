@@ -162,42 +162,6 @@
 
 ---
 
-<h2 align="center">🚀 Installation</h2>
-
-<h3 align="center">Prerequisites</h3>
-
-<p align="center">
-  Docker & Docker Compose • Python 3.12+ • 4GB RAM minimum
-</p>
-
-<h3 align="center">Quick Start</h3>
-```bash
-# Clone repository
-git clone https://github.com/aryadoshii/quantitative-trading-analytics.git
-cd quantitative-trading-analytics
-
-# Start services (TimescaleDB + Redis)
-docker-compose -f config/docker-compose.yml up -d
-
-# Install Python dependencies
-pip install -r requirements.txt
-
-# Run backend (Terminal 1)
-python3 src/main.py
-
-# Run dashboard (Terminal 2)
-streamlit run src/app.py
-```
-
-<p align="center">
-  <b>Access Dashboard:</b> <a href="http://localhost:8501">http://localhost:8501</a>
-</p>
-
-<p align="center">
-  <b>Detailed Setup:</b> See <a href="docs/INSTALLATION.md">INSTALLATION.md</a>
-</p>
-
----
 
 <h2 align="center">📊 Demo</h2>
 
@@ -271,23 +235,6 @@ Through parameter optimization:
   This project was developed <b>with assistance from Claude (Anthropic's AI)</b>:
 </p>
 
-**Claude helped with:**
-- Debugging the cointegration vs correlation distinction
-- Explaining ADF test interpretation
-- Code review and optimization
-- Documentation structure
-
-**I personally:**
-- Designed system architecture
-- Wrote all production code  
-- Implemented Signal Quality Scorer algorithm
-- Conducted parameter optimization
-- Made all strategic decisions
-
-<p align="center">
-  Full disclosure: <a href="AI_USAGE.md">AI_USAGE.md</a>
-</p>
-
 ---
 
 <h2 align="center">📚 Documentation</h2>
@@ -327,14 +274,13 @@ Through parameter optimization:
 </p>
 
 <p align="center">
-  Active trader in Indian equity markets (NSE/BSE)<br>
-  US markets trader (NYSE/NASDAQ)<br>
+  Active Investor & trader  in Indian equity markets (NSE/BSE)<br>
+  US markets Investor & trader (NYSE/NASDAQ)<br>
   Recently exploring cryptocurrency markets on Binance<br>
-  Passionate about quantitative finance, algorithmic trading, and statistical arbitrage
-</p>
+  Passionate about equity markets, quantitative finance and algorithmic trading
 
 <p align="center">
-  <b>Contact:</b>
+  <b>Contact:</b,>
 </p>
 
 <p align="center">
@@ -350,48 +296,5 @@ Through parameter optimization:
 <p align="center">
   MIT License - see <a href="LICENSE">LICENSE</a>
 </p>
-
----
-
-<h2 align="center">🙏 Acknowledgments</h2>
-
-<p align="center">
-  <b>Gemscap</b> for the challenging assignment<br>
-  <b>Claude (Anthropic)</b> for debugging assistance and statistical guidance<br>
-  <b>Binance</b> for WebSocket API access<br>
-  <b>Professor Robert Shiller (Yale)</b> whose Financial Markets course inspired this work
-</p>
-
----
-
-<p align="center">
-  <i>Built with passion for quantitative finance and a commitment to honest performance reporting.</i>
-</p>
-
-<p align="center">
-  <b>⭐ Star this repo if you found it helpful! ⭐</b>
-</p>
-
----
-
-<h2 align="center">🔗 Quick Links</h2>
-
-<p align="center">
-  <a href="#">📊 Live Demo</a> (if deployed)<br>
-  <a href="#">📹 Video Walkthrough</a> (upload link)<br>
-  <a href="mailto:arya.doshi22@vit.edu">📧 Contact Me</a><br>
-  <a href="https://aryadoshii.github.io">💼 My Portfolio</a> (if available)
-</p>
-
----
-
-<p align="center">
-  <b>Made for Gemscap Quantitative Developer Role</b>
-</p>
-
-<p align="center">
-  <i>Last Updated: December 17, 2025</i>
-</p>
-```
 
 ---
