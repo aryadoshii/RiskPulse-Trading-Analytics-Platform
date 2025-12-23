@@ -1,4 +1,4 @@
-<h1 align="center">📊 Quantitative Trading Analytics Platform</h1>
+<h1 align="center">📊 RiskPulse - Trading Analytics Platform</h1>
 
 <p align="center">
   <b>Real-time statistical arbitrage system for cryptocurrency pairs trading with intelligent signal quality assessment and institutional-grade risk management.</b>
