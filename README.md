@@ -170,6 +170,90 @@
 ---
 
 
+<h2 align="center">🚀 Installation</h2>
+
+### Prerequisites
+
+| Requirement | Version |
+|---|---|
+| Python | 3.12+ |
+| Docker & Docker Compose | Latest |
+| Git | Any |
+
+---
+
+### Option A — One-command setup (recommended)
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/aryadoshii/RiskPulse-Trading-Analytics-Platform.git
+cd RiskPulse-Trading-Analytics-Platform
+
+# 2. Run setup (starts Docker services + installs dependencies)
+chmod +x scripts/setup.sh
+./scripts/setup.sh
+
+# 3. Start everything with a single command
+chmod +x scripts/run.sh
+./scripts/run.sh
+```
+
+The dashboard opens automatically at **http://localhost:8501**
+
+---
+
+### Option B — Manual setup (step by step)
+
+**Step 1 — Clone and enter the repo**
+
+```bash
+git clone https://github.com/aryadoshii/RiskPulse-Trading-Analytics-Platform.git
+cd RiskPulse-Trading-Analytics-Platform
+```
+
+**Step 2 — Start infrastructure (TimescaleDB + Redis)**
+
+```bash
+docker-compose -f config/docker-compose.yml up -d
+```
+
+Wait ~10 seconds for the databases to initialise.
+
+**Step 3 — Install Python dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+**Step 4 — Start the backend** (Terminal 1)
+
+```bash
+python src/main.py
+```
+
+This connects to Binance WebSocket and begins ingesting live tick data.
+
+**Step 5 — Start the dashboard** (Terminal 2)
+
+```bash
+streamlit run src/app.py
+```
+
+**Step 6 — Open the dashboard**
+
+Navigate to **http://localhost:8501** in your browser.
+
+---
+
+### Stopping the application
+
+```bash
+# Stop Docker services
+docker-compose -f config/docker-compose.yml down
+```
+
+---
+
 <h2 align="center">📊 Demo</h2>
 
 <h3 align="center">Analytics Summary</h3>
@@ -250,11 +334,12 @@ Through parameter optimization:
 <h2 align="center">📚 Documentation</h2>
 
 <p align="center">
-  <a href="ARCHITECTURE.md"><b>ARCHITECTURE.md</b></a> - Technical deep dive into system design<br>
+  <a href="docs/ARCHITECTURE.md"><b>ARCHITECTURE.md</b></a> - Technical deep dive into system design<br>
+  <a href="docs/QUICKSTART.md"><b>QUICKSTART.md</b></a> - Quick start reference<br>
   <a href="docs/INSTALLATION.md"><b>INSTALLATION.md</b></a> - Detailed setup guide<br>
   <a href="docs/USER_GUIDE.md"><b>USER_GUIDE.md</b></a> - How to use the dashboard<br>
   <a href="docs/LEARNINGS.md"><b>LEARNINGS.md</b></a> - Post-mortem insights<br>
-  <a href="AI_USAGE.md"><b>AI_USAGE.md</b></a> - Transparency about Claude's assistance
+  <a href="docs/AI_USAGE.md"><b>AI_USAGE.md</b></a> - Transparency about Claude's assistance
 </p>
 
 ---
