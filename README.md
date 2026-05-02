@@ -238,10 +238,6 @@ Through parameter optimization:
   <b>Outcome:</b> This demonstrates why statistical rigor (cointegration testing) is essential in quantitative trading.
 </p>
 
-<p align="center">
-  See full post-mortem: <a href="docs/LEARNINGS.md">LEARNINGS.md</a>
-</p>
-
 ---
 
 <h2 align="center">📈 Results</h2>
